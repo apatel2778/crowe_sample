@@ -21,8 +21,6 @@ namespace Crowe.Console
         private static async Task<string> SendToApi(string data)
         {
             WebClient.DefaultRequestHeaders.Accept.Clear();
-            //WebClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
-            //WebClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
             // NOTE: You need to replace the host var w/your local host and port #
             var host = "https://localhost:44337";
             var apiUrl = "/api/dataWriter";
